@@ -114,6 +114,7 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
     public void ChooseIncreaseSoundVolume() {
         Radio cond = new Radio();
@@ -126,6 +127,7 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
     @Test
     public void IncreaseStationNumber() {
         Radio cond = new Radio();
@@ -135,8 +137,9 @@ public class RadioTest {
         int expected = 6;
         int actual = cond.StationNumber;
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void ChooseIncreaseStationNumberLargeMax() {
         Radio cond = new Radio();
@@ -148,6 +151,7 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void ChooseIncreaseSoundVolumeLargeMax() {
         Radio cond = new Radio();
@@ -157,9 +161,10 @@ public class RadioTest {
         int expected = 10;
         int actual = cond.SoundVolume;
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
     }
-@Test
+
+    @Test
     public void ChooseIncreaseSoundVolumeLargeMini() {
         Radio cond = new Radio();
 
@@ -168,7 +173,7 @@ public class RadioTest {
         int expected = 0;
         int actual = cond.SoundVolume;
 
-        Assertions.assertEquals(expected,actual);
+        Assertions.assertEquals(expected, actual);
 
-}
+    }
 }
